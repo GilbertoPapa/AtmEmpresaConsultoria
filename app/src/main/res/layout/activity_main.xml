@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorAccent"
+    tools:context="com.gilbertopapa.atmempresaconsultoria.MainActivity">
+
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:srcCompat="@drawable/logo"
+        tools:layout_editor_absoluteX="59dp"
+        tools:layout_editor_absoluteY="45dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="46dp" />
+
+    <ImageButton
+        android:id="@+id/CompanyId"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/imageView"
+        android:layout_below="@+id/imageView"
+        android:layout_marginTop="18dp"
+        android:background="@color/colorAccent"
+        app:srcCompat="@drawable/menu_empresa" />
+
+    <ImageButton
+        android:id="@+id/SevicesId"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@color/colorAccent"
+        app:srcCompat="@drawable/menu_servico"
+        android:layout_alignTop="@+id/CompanyId"
+        android:layout_alignEnd="@+id/imageView" />
+
+    <ImageButton
+        android:id="@+id/ClientId"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@color/colorAccent"
+        app:srcCompat="@drawable/menu_cliente"
+        android:layout_alignTop="@+id/ContactId"
+        android:layout_alignStart="@+id/CompanyId" />
+
+    <ImageButton
+        android:id="@+id/ContactId"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="29dp"
+        android:background="@color/colorAccent"
+        app:srcCompat="@drawable/menu_contato"
+        android:layout_below="@+id/SevicesId"
+        android:layout_alignStart="@+id/SevicesId" />
+
+
+</RelativeLayout>
